@@ -28,19 +28,19 @@ void loop() {
     // example 'a' = 97, 'b' = 98, and so forth:
 
     switch (inByte) {
-      case 'a':
+      case '1':
         pinLight(2);
         break;
-      case 'b':
+      case '2':
         pinLight(3);
         break;
-      case 'c':
+      case '3':
         pinLight(4);
         break;
-      case 'd':
+      case '4':
         pinLight(5);
         break;
-      case 'e':
+      case '5':
         pinLight(6);
         break;
       default:

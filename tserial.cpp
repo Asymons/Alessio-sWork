@@ -38,7 +38,7 @@
 #include <process.h>
 #include <conio.h>
 #include <windows.h>
-#include <stdafx.h>
+//#include <stdafx.h>
 #include "tserial.h"
 
 /* -------------------------------------------------------------------- */
@@ -88,7 +88,7 @@ int  Tserial::connect          (char *port_arg, int rate_arg, serial_parity pari
 
     if (port_arg!=0)
     {
-        strncpy(port, port_arg, 10);
+        strncpy_s(port, port_arg, 10);
         rate      = rate_arg;
         parityMode= parity_arg;
         memset(&dcb,0,sizeof(dcb));
